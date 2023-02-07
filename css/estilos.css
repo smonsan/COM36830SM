@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background: hsla(242, 60%, 36%, 1);
+
+    background: linear-gradient(180deg, hsla(242, 60%, 36%, 1) 5%, hsla(203, 40%, 43%, 1) 100%);
+
+    background: -moz-linear-gradient(180deg, hsla(242, 60%, 36%, 1) 5%, hsla(203, 40%, 43%, 1) 100%);
+
+    background: -webkit-linear-gradient(180deg, hsla(242, 60%, 36%, 1) 5%, hsla(203, 40%, 43%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#272492", endColorstr="#42799A", GradientType=1);
+    /* ultimos cambios para ubicar el footer siempre abajo */
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px 40px;
+    padding: 5px;
+}
+
+.imagenlogo {
+    width: 150px;
+    height: 40px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin-left: 10vh;
+    margin-right: 10vw;
+
+}
+
+ul {
+    list-style-type: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: 500; */
+    /* width:10%; */
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    margin: 2px;
+
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+li a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.principal {
+    text-align: center;
+    font-size: 40px;
+    line-height: 2;
+    font-weight: 700;
+    margin: 50px;
+    /* margin: 5% */
+    padding: 5px;
+}
+
+.principaltext {
+    text-align: justify;
+    font-size: 1.5rem;
+    /* font-weight:600; */
+    line-height: 1.5;
+    padding: 1%;
+    margin: 2% 10%;
+
+
+
+}
+
+
+.section1, .section2 {
+
+    /* display: grid;
+    grid-template-areas: 
+    "textbox123 imagetarjeta"; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+   
+
+
+}
+
+/* .textinblocks {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .section1 div{
+    grid-area: textbox123 ;
+}
+.section1 img{
+    grid-area: imagetarjeta;
+} */
+
+
+
+.textinblocks div {
+    border: 2px;
+    background-color: cornflowerblue;
+    box-shadow: 2px 4px 10px #000;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 4%;
+    width: 400px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    opacity: 90%;
+}
+
+.sectionmain{text-align: center;}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 2.1rem;
+    padding: 2px;
+    margin: 2%;
+}
+
+.textinblocks3 {
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+ 
+}
+
+/* agregar propiedades al flex */
+
+.textinblocks3 div {
+    border: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 4px 10px #000;
+    color: #000;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.textinblocks3 h3{
+    padding: 5px;
+    margin:10px;
+}
+.section3 img {
+    height: 40%;
+}
+
+.imagenmision{
+    height: 80%;
+}
+
+/* animacion */
+@keyframes aparecer {
+    0% {
+        transform: perspective(800px) rotateY(-20deg);
+    }
+
+    25% {
+        transform: perspective(800px) rotateY(-10deg)
+    }
+
+    50% {
+        transform: perspective(800px) rotateY(0deg)
+    }
+
+    75% {
+        transform: perspective(800px) rotateY(-10deg)
+    }
+
+    100% {
+        transform: perspective(800px) rotateY(-20deg);
+    }
+
+}
+
+/* ver tamaño de tarjeta al hacerlo responsive */
+.imagentarjeta {
+    width: 35%;
+    min-width: 300px;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+
+.imageninversion {
+    width: 35%
+}
+
+.divform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid #FFFFFF; */
+    box-shadow: 2px 4px 40px 4px #000;
+    border-radius: 5%;
+    /* revisar que medida queda mejor para el width */
+    /* width: 400px; */
+    width: 30vw;
+    /* min-width: 280px; */
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #9FC2CC;
+}
+
+form {
+    /* width: 350px; */
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    margin: 20px;
+}
+
+.inputForm {
+    /* width: 250px; */
+    width: 90%;
+    max-width: 250px;
+    padding: 2px;
+    margin: 10px 11px;
+    /* transition */
+    transition: all 1s;
+}
+
+.inputForm:focus {
+    width: 285px;
+    height: 30px;
+}
+
+.buttonReg {
+    width: fit-content;
+    margin: 10px 40px
+}
+
+.Form label {
+    color: #000;
+}
+
+
+.footer {
+    background-color: cornflowerblue;
+    background-size: cover;
+    background-position: top;
+    font-size: 18px;
+    text-align: center;
+    height: 79px;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 270px;
+}
+
+.footer div p {
+    margin: 2px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.iconoredes img {
+    width: 30px;
+    margin: 0px 20px;
+}
+
+
+@media (min-width:320px) and (max-width:768px) {
+    /* body{display: grid;
+grid-template-areas: 
+                    "header"
+                    "h1"
+                    "tp"
+                    "tblocks3"
+                    "tblocks"
+                    "footer";}
+
+
+   header{grid-area: header;}
+
+  .principal{grid-area: h1;}
+
+  .principaltext{grid-area: tp;}
+
+  .textinblocks {grid-area: tblocks;}
+
+  .textinblocks3{grid-area: tblocks3;}
+
+  .footer{grid-area: footer;}
+
+
+  header{flex-direction: column;
+flex-wrap: wrap;} */
+
+
+    .textinblocks3 {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header img {
+        text-align: center;
+    }
+
+    .divform {
+        min-width: 280px;
+        width: 90vw;
+        padding: 0;
+    }
+
+    .form {
+        width: 90vw;
+        margin: 0;
+    }
+
+    .inputForm {
+        width: 90%;
+        margin: 2px;
+        padding: 0;
+    }
+
+    /* .section1 {
+        display: grid;
+        grid-template-areas: 
+        "imagetarjeta"
+        "textbox123"
+        ;  */
+
+    .section1 {
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        margin: 80px;
+    }
+
+}
